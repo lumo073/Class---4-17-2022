@@ -1,0 +1,33 @@
+FrontEnd Development (UI)
+-> HTML 5 
+-> CSS
+-> Bootstrap
+-> JavaScript
+-> React JS ( MERN) / Vue JS (PHP)
+
+Version Control
+-> GIT
+-> Github
+
+Database
+-> MongiDb (MERN) : NOSQL
+-> MySQL (PHP & Python) : Relation Database
+
+
+BackEnd
+*MERN JS
+-> Node JS
+->Express JS
+
+*PHP
+-> PHP with OOP
+-> Laravel ( Framework of PHP)
+
+*Python
+-> Python
+-> Django
+-> Django Rest API
+
+Deployment
+->Heroku
+
