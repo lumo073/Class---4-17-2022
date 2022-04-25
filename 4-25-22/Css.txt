@@ -1,0 +1,22 @@
+CSS -> Cascading Stylesheet
+used to style html page
+version3
+
+types of CSS
+1. Internal CSS
+2. External CSS
+3. Inline CSS
+
+Basic Syntax
+
+Selector {
+    Properties: Value;
+    Properties: Value;
+}
+
+types of Selector
+1. element Selector
+2. class Selector
+3. id Selector
+4. universal Selector
+5. grouping Selector
