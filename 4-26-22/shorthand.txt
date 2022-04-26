@@ -6,3 +6,5 @@ Margin : 5px 10px 8px 20px
 margin : 10px 7px 15px
         top right&left bottom
 
+margin : 5px 10px
+        top&bottom right&left
