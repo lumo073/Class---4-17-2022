@@ -11,5 +11,5 @@ margin : 5px 10px
 
 margin : 10px ( all Side)
 
-margin : auto ( Centered an element from left to right)
+margin : auto ( Centered an element from left to right )
 
