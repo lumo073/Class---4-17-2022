@@ -8,3 +8,7 @@ margin : 10px 7px 15px
 
 margin : 5px 10px
         top&bottom right&left
+
+margin : 10px ( all Side)
+
+margin : auto ( Centered an element from left to right)
