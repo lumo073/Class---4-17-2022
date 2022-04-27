@@ -7,19 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Sizing</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
         .demo-first {
             height: 200px;
-            width: 200px;
+            width: 300px;
             background-color: aqua;
         }
         
         .demo-second {
             height: 200px;
-            width: 200px;
+            width: 300px;
             background-color: aquamarine;
             margin-top: 15px;
-            padding: 15px;
-            box-sizing: border-box;
+            padding: 10px;
+            /* box-sizing: border-box; */
         }
     </style>
 </head>
