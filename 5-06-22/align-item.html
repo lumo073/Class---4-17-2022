@@ -18,6 +18,10 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            align-items: center;
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
         }
         
         .demo {
@@ -25,6 +29,10 @@
             width: 200px;
             background-color: antiquewhite;
             margin: 15px 0;
+        }
+        
+        .item {
+            height: 300px;
         }
     </style>
 </head>
@@ -35,7 +43,7 @@
     </pre>
     <div class="container">
         <div class="demo"></div>
-        <div class="demo"></div>
+        <div class="demo item"></div>
         <div class="demo"></div>
     </div>
 </body>
