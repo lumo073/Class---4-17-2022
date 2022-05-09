@@ -1,0 +1,24 @@
+<!-- BOM
+(browser object Model) -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="result"></p>
+	<button onclick="return confirm('are you sure want to delete this ?')">delete</button>
+	<script type="text/javascript">
+		var message;
+		if(confirm('press ok to continue')){
+			message="you press ok button";
+		}
+		else{
+			message="you press cancel button";
+		}
+		document.getElementById('result').innerHTML=message;
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+<body>
+	<center>Enter First Number<br>
+	For Square and Cube <br>
+	<input type="number" id="First"><br>
+	Enter Second Number<br>
+	<input type="number" id="Second"><br>
+
+	<input type="submit" name="submit" onclick="add()" value="ADD">
+	<input type="submit" name="submit" onclick="sub()" value="SUB">
+	<input type="submit" name="submit" onclick="div()" value="DIV">
+	<input type="submit" name="submit" onclick="mult()" value="MULT">
+	<input type="submit" name="submit" onclick="mod()" value="MOD">
+	<input type="submit" name="submit" onclick="squ()" value="SQU">
+	<input type="submit" name="submit" onclick="cub()" value="CUB">
+	<input type="submit" name="submit" onclick="per()" value="PER">
+	<input type="submit" name="submit" onclick="asq()" value="Asq-Bsq">
+	<p id="result"></p></center>
+<script type="text/javascript">
+	
+function add(){
+	var x=document.getElementById('First').value;
+	var y=document.getElementById('Second').value;
+// + addition and concatenate
+	var z=Number (x) + Number (y);
+	// document.write(z);
+	document.getElementById('result').innerHTML="The addition is&nbsp;"+z;
+	}
+
+function sub(){
+	var x=document.getElementById('First').value;
+	var y=document.getElementById('Second').value;
+
+	var z= Number(x)-Number(y);
+	document.getElementById('result').innerHTML="The Subtraction is&nbsp;"+z;
+}
+
+function div(){
+
+	var x=document.getElementById('First').value;
+	var y=document.getElementById('Second').value;
+
+	var z=Number(x) / Number(y);
+	document.getElementById('result').innerHTML="The Division is&nbsp;"+z;
+
+}
+
+function mult(){
+	var x=document.getElementById('First').value;
+	var y=document.getElementById('Second').value;
+
+	var z= Number(x) * Number(y);
+	document.getElementById('result').innerHTML="The Multiplication is&nbsp;"+z;
+}
+
+function mod(){
+	var x=document.getElementById('First').value;
+	var y=document.getElementById('Second').value;
+
+	 var z= Number(x) % Number(y);
+	 document.getElementById('result').innerHTML="The Modulos is &nbsp;"+z;
+}
+
+function squ(){
+	var x=document.getElementById('First').value;
+
+	var z=Number(x) *Number(x);
+	document.getElementById('result').innerHTML="The Square is&nbsp;"+z;
+}
+
+function cub(){
+	var x=document.getElementById('First').value;
+
+	var z=Number(x)*Number(x)*Number(x);
+	document.getElementById('result').innerHTML="The Cube is&nbsp;"+z;
+}
+
+function per(){
+	var x=document.getElementById('First').value;
+	var y=document.getElementById('Second').value;
+
+	var z=Number(x) / Number(y=100);
+	document.getElementById('result').innerHTML="The Percentage is&nbsp;"+z;
+}
+ function asq (){
+
+ 	var x=document.getElementById('First').value;
+ 	var y=document.getElementById('Second').value;
+
+ 	var z=(Number (x)+Number(y))*(Number(x)-Number(y));
+ 	document.getElementById('result').innerHTML="The Asquare-Bsquare is&nbsp;"+z;
+ }
+
+
+</script>
+
+
+
+</body>
+</html>

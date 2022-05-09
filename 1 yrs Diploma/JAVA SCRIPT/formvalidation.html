@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form onsubmit="return validform()">
+		First Name:<br>
+		<input type="text" name="" id="fname" onkeyup="fnamevalidate()" >
+		<span id="fnamemsg"></span>
+		<br>
+		Last Name: <br>
+		<input type="text" name="" id="lname" onkeyup="lnamevalidate()" >
+		<span id="lnamemsg"></span>
+		<br>
+		E-mail:<br>
+		<input type="text" name="" id="email" onkeyup="emailvalidate()">
+		<span id="emailmsg"></span>
+		<br>
+		Password:<br>
+		<input type="password" name="" id="pass" onkeyup="passvalidate()">
+		<span id="passmsg"></span>
+		<br>
+		<input type="submit" name="submit" value="Register">
+	</form>
+<!-- 	Regular Expression
+^->it check from the begining
+$->it check from the last
+[a-z]->it matches all the lowercase alphabets from a to z
+[A-Z]->it matches all the uppercase alphabets
+[0-9]->it matches all the numbers
+for special character use blacklash
+eg\@\space\-\.\,\ -->
+	<script type="text/javascript">
+		function fnamevalidate(){
+			var fname=document.getElementById('fname').value;
+			if(fname==""){
+				displayMessage('Please Insert Your  First Name','fnamemsg','red');
+				return false;
+			}else if(fname.length<3){
+				displayMessage('First Name atleast Should be of 3 Characters','fnamemsg','red');
+				return false;
+			}else if(!fname.match(/^([A-Za-z])+$/)){
+				displayMessage('Firstname only contains of lower and uppercase alphabets','fnamemsg','red');
+				return false;
+			}
+			 else{
+				displayMessage('Valid First Name','fnamemsg','green');
+				return true;
+			}
+		}
+
+			function lnamevalidate(){
+			var lname=document.getElementById('lname').value;
+			if(lname==""){
+				displayMessage('Please Insert Your Last Name','lnamemsg','red');
+				return false;
+			}else if(lname.length<3){
+				displayMessage('Last Name atleast Should be of 3 Characters','lnamemsg','red');
+				return false;
+			}else if(!lname.match(/^([A-za-z])+$/)) {
+				displayMessage('Lastname only contains of lower and uppercase alphabets','lnamemsg','red');
+				return false;
+
+			}
+			 else{
+				displayMessage('Valid Last Name','lnamemsg','green');
+				return true;
+			}
+		}
+
+		function emailvalidate(){
+			var email=document.getElementById('email').value;
+			if(email==""){
+				displayMessage('Please Insert Your E-mail','emailmsg','red');
+				return false;
+			}else if(!email.match(/^([a-z])[a-z0-9\_\.]+\@+(([a-z])+\.)+(com)+$/)){
+				displayMessage('Invalid E-mail','emailmsg','red');
+				return false;
+			}
+			else{
+				displayMessage('Valid E-mail','emailmsg','green');
+				return true;
+			}
+		}
+		// {m,n}->{5,20}{mimimum,maximum}
+		// ?=matches anywhere not specific position required
+		// *=matches preceding character
+		// \d=digit
+		// .=matches single character
+
+		function passvalidate(){
+			var pass=document.getElementById('pass').value;
+			if(pass==""){
+				displayMessage('Please Insert Your Password','passmsg','red');
+				return false;
+			// }else if(pass.length<8){
+			// 	displayMessage('Password atleast Should be of 8 Characters ','passmsg','red');
+			// 	return false;
+				// (/^([A-Z])[a-z0-9\_\.\!\@\#\$\%\^\&\*\,]+$/))
+			}else if(!pass.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/)){
+				displayMessage('Password Should consist of uppercase ,lowercase, Number ,Special with atleast 8 Characters ','passmsg','red');
+				return false;
+			}
+			else{
+				displayMessage('Valid Password','passmsg','green');
+				return true;
+			}
+		}
+		function validform(){
+			if (fnamevalidate()&&lnamevalidate()&&emailvalidate()&&passvalidate()){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		
+		function displayMessage(message,id,color){
+			document.getElementById(id).innerHTML=message;
+			document.getElementById(id).style.color=color;
+		}
+		
+	</script>
+</body>
+</html>

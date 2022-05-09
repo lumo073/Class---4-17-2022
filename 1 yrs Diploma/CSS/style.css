@@ -1,0 +1,43 @@
+.container{
+	width: 100%;
+	background-color: green;
+	display: flex;
+	flex-wrap: wrap;
+
+
+}	
+.item{
+	height: 200px;
+	width: 150px;
+	margin:10px;
+	background-color: dodgerblue;
+
+}	
+.max-width{
+	max-width: 1000px;
+	background-color: red;
+	height: 500px;
+	/*width: 1000px;*/
+}
+.button{
+	width:400px;
+	height: 500px;
+	position: relative;
+	margin: auto;
+}
+img{
+	height: 100%;
+	width: 100%;
+}
+.prev{
+	position: absolute;
+	top:200px;
+	font-size: 30px;
+
+}
+.next{
+	position: absolute;
+	top:200px;
+	right: 0px;
+	font-size: 30px;
+}

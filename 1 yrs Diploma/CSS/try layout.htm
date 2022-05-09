@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+.header{
+	background-color: black;
+	text-transform: capitalize;
+	color: white;
+}
+h1{
+	box-shadow: none;
+}
+.nav{
+	width: 100%;
+	background-color: dodgerblue;
+	margin-top: 5px;
+}
+ ul {
+ 	padding: 0;
+
+ }
+ul li{
+	list-style: none;
+	float: left;
+	position: relative;
+}
+ul::after{
+	content: '';
+	clear: both;
+	display: block;
+}
+ul li a{
+	color: white;
+	text-transform: capitalize;
+	font-size: 25px;
+	text-decoration: none;
+	padding: 15px 20px;
+	display: block;
+}
+ul li a:hover{
+	background-color: red;
+}
+ul ul {
+	background-color: green;
+	width: 162px;
+	display: none;
+	position: absolute;
+}
+ul li:hover ul{
+	display:block; 
+}
+ul ul li{
+
+	float: none;
+}
+body{
+	background-color: #d2323294;
+}
+.main{
+	height: 1000px;
+	width: 100%;
+	background-color: #56c35f8a;
+}
+.left{
+	height: 1000px;
+	width: 70%;
+	/*background-color: #ae779eb0;*/
+	float: left;
+}
+.firstleft{
+	height: 495px;
+	background-color:#a227c3b0; 
+}
+.secondleft{
+	height: 495px;
+	background-color: #a227c3b0;
+	margin-top: 10px;
+}
+.right{
+	height: 1000px;
+	width: 30%;
+	/*background-color: #2bf6f4b3;*/
+	float: right;
+}
+.firstright{
+	height: 330px;
+	background-color: #dbc00ec9;
+
+
+}
+.secondright{
+	height: 330px;
+   background-color: #dbc00ec9;
+	margin-top:5px;
+
+
+}
+.thirdright{
+	height: 330px;
+	background-color: #dbc00ec9;
+	margin-top:5px;
+
+}
+.footer{
+	background-color: dodgerblue;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	height: 80px;
+	margin-top: 5px;
+}
+
+*{
+	box-sizing: border-box;
+	box-shadow:0 0 10px #170303;
+	background-color: #7c44b1;
+}
+
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="header">
+<marquee><h1>Welcome To Our Blog</h1></marquee>
+</div>
+<div class="nav">
+	
+<ul>
+	<li><a href="">Home Luminous </a></li>
+	<li><a href="">Home Paradise</a></li>
+	<li><a href="">Home Sweet Home</a></li>
+	<li><a href="">Home Pission</a></li>
+	<li><a href="">Home More</a>
+<ul>
+	<li><a href="">Home 1</a></li>
+	<li><a href="">Home 2</a></li>
+	<li><a href="">Home 3</a></li>
+	<li><a href="">Home 4</a></li>
+    </ul>
+    </li>
+
+</ul>
+</div>
+<div class="main">
+	<div class="left">
+		<div class="firstleft"></div>
+		<div class="secondleft"></div>
+	</div>
+	<div class="right">
+		<div class="firstright"></div>
+		<div class="secondright"></div>
+		<div class="thirdright"></div>
+	</div>
+</div>
+<div class="footer">
+    &copy; Copyright 2015-2019,All Rights Reserved	
+    </div>	
+
+</body>
+</html>

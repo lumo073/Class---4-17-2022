@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div	{
+			height:400px;
+			width: 400px;
+			background-color: #7ecbd263;
+			color: #3d4ed0e3;
+			margin: auto;
+			font-size: 50px;
+			padding-top: 150px;
+			text-align: center;
+			box-sizing: border-box;
+			text-transform: capitalize;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div id="Press">
+		Press The Mouse
+	</div>
+	<script type="text/javascript">
+		var xyz=document.getElementById('Press');
+		xyz.addEventListener('mousedown',down);
+		xyz.addEventListener('mouseup',up);
+
+		function down(){
+			var xyz=document.getElementById('Press');
+			xyz.style.backgroundColor="orange";
+			xyz.innerHTML="Release The Mouse";
+		}
+		function up(){
+			var xyz=document.getElementById('Press');
+			xyz.style.backgroundColor="lightgreen";
+			xyz.innerHTML="Thank You";
+		}
+	</script>
+
+</body>
+</html>

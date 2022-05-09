@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+.header{
+
+background-color: black;
+color: white;
+text-transform: capitalize;
+
+}
+h1{
+	box-shadow: none;
+}
+
+.nav{
+	width: 100%;
+	background-color: dodgerblue;
+	
+	margin-top: 5px;
+}
+ul{
+
+	padding: 0;
+}
+
+ul li {
+
+list-style: none;
+float: left;
+position: relative;
+
+}
+
+ul::after{
+
+	content:'';
+	clear: both;
+	display: block;
+}
+
+ul li a{
+
+color: white;
+text-transform: capitalize;
+text-decoration: none;
+font-size: 25px;
+padding: 15px 20px;
+display: block;
+
+
+}
+
+ul li a:hover{
+	background-color: red;
+}
+
+ul ul {
+
+background-color: lightgreen;
+width: 120px;
+position: absolute;
+display: none;	
+
+}
+ul li:hover ul{
+	display: block;
+}
+ul ul li{
+
+	float: none;
+}
+
+body{
+	background-color: silver;
+}
+.main{
+	height: 900px;
+	width: 100%;
+	/*background-color: purple;*/
+	margin-top: 5px;
+}
+.left{
+	width: 70%;
+	height: 900px;
+	/*background-color: yellow;*/
+	float: left;
+}
+.right{
+	width: 30%;
+	height: 900px;
+	/*background-color: maroon;*/
+	float: right;
+	padding-left: 10px;
+}
+.firstleft{
+	height: 440px;
+	background-color: skyblue;
+}
+
+.secondleft{
+	height: 440px;
+	background-color: orange;
+	margin-top: 20px;
+
+}
+.firstright{
+height: 290px;
+background-color: #313482;
+
+}
+.secondright{
+height: 290px;
+background-color: #544a94;
+margin-top: 15px;
+}
+.thirdright{
+height: 290px;
+background-color:#6a61bd;
+margin-top: 15px;
+}
+.footer{
+	background-color: dodgerblue;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	height: 80px;
+	margin-top: 5px;
+}
+
+*{
+	box-sizing: border-box;
+	box-shadow:0 0 10px #170303;
+	background-color: #7c44b1;
+}
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="header">
+
+<marquee><h1>Welcome To Our Blog</h1></marquee>		
+
+	</div>
+	<div class="nav">
+	
+<ul>
+	
+<li><a href="">Home</a></li>
+<li><a href="">Services</a></li>
+<li><a href="">PortFolio</a></li>
+
+<li><a href="">Gallery</a>
+<ul>
+<li><a href="">Item-1</a></li>
+<li><a href="">Item-2</a></li>
+<li><a href="">Item-3</a></li>
+<li><a href="">Item-4</a></li>	
+</ul>
+</li>
+
+<li><a href="">Testomonials</a></li>
+<li><a href="">About Us</a></li>
+<li><a href="">Contact Us</a></li>
+</ul>
+</div>
+	<div class="main">
+	
+	<div class="left">
+	<div class="firstleft"></div>
+	<div class="secondleft"></div>	
+	</div>
+	<div class="right">
+	<div class="firstright"></div>
+	<div class="secondright"></div>
+	<div class="thirdright"></div>	
+	</div>
+    </div>
+    <div class="footer">
+    &copy; Copyright 2015-2019,All Rights Reserved	
+    </div>
+
+</body>
+</html>

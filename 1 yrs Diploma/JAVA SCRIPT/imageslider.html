@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.container{
+			height: 500px;
+			width: 500px;
+			margin: auto;
+			position: relative;
+		}
+		img{
+			height: 100%;
+			width: 100%;
+		}
+		.prev{
+			position: absolute;
+			top:50%;
+			font-size: 40px;
+			background: #04ade2b5;
+			color: #6813ff8f;
+			border-radius: 10px;
+		}
+		.next{
+			position: absolute;
+			top: 50%;
+			right:0px;
+			font-size: 40px;
+			background: #04ade2b5;
+			color: #6813ff8f;
+			border-radius: 10px;
+
+		}
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<img src="image/3.jpg" id="image">
+		<button class="prev" onclick="prev()">&lt;</button>
+		<button class="next" onclick="next()">&gt;</button>
+	</div>
+	<script type="text/javascript">
+		var img_array=['3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg'];
+		var array_length=img_array.length;
+		var i=0;
+		var set=setInterval(slider,3000);
+		// here slider is a function
+		// 3000 is 3 second time
+		// function slider(){
+		// 	i++;
+		// 	i=i%array_length;
+		// 	document.getElementById('image').src="image/"+img_array[i];
+
+		// }
+		function next(){
+			i++;
+			i=i%array_length;
+			document.getElementById('image').src="image/"+img_array[i];
+
+		}
+		function prev(){
+			i--;
+			if(i<0){
+				i=array_length-1;
+			}
+			document.getElementById('image').src="image/"+img_array[i];
+		}
+
+	</script>
+
+
+</body>
+</html>

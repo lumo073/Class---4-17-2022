@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+.NavBar{
+
+width: 100%;
+background-color: maroon;
+
+}
+
+ul{
+	padding: 0;
+}
+
+ul li{
+
+list-style: none;
+float: left;
+position: relative;	
+}
+ul::after{
+
+content: '';
+clear: both;
+display: block;	
+}
+ul li a{
+
+	color: white;
+	text-transform: capitalize;
+	font-size: 50px;
+	text-decoration: none;
+	padding: 15px 20px;
+	display: block;
+}
+ul li a:hover{
+	background-color: blue;
+	
+}
+ul ul{
+
+	background-color: lightgreen;
+	width: 120px;
+	position: absolute;
+	display: none;
+}
+ul li:hover ul{
+	display: block;
+}
+
+ul ul li{
+
+	float: none;
+}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="NavBar">
+
+<ul>
+<li><a href="">a</a></li>
+<li><a href="">b</a></li>	
+<li><a href="">c</a></li>	
+<li><a href="">d</a></li>	
+<li><a href="">e</a>
+<ul>
+<li><a href="">f</a></li>
+<li><a href="">g</a></li>	
+<li><a href="">h</a></li>	
+<li><a href="">i</a></li>	
+<li><a href="">j</a></li>	
+</ul>
+</li>		
+
+</ul>		
+		
+</div>
+
+</body>
+</html>

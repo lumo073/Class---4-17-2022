@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+var text="Welcome to javascript class to read a scripting language. javascript is similar to C-Programming";
+document.write(text+"<br>");
+// to count the lenght of string use lenght
+document.write(text.length);
+document.write('<br>');
+// to find a position of specific string use indexOf
+document.write(text.indexOf('to'));
+document.write('<br>');
+// to find the last position of repeted string use lastIndexOf
+document.write(text.lastIndexOf('to'));
+document.write('<br>');
+// search is similar to indexOf but search is very powerful in regular expression
+document.write(text.search('to'));
+document.write('<br>');
+// to replace a string in a string use replace
+document.write(text.replace('javascript','jquery'));
+document.write('<br>');
+// to replace a string globally g=globally i=insensative
+document.write(text.replace(/javascript/gi,'jquery'));
+document.write('<br>');
+// to change string toUpperCase
+document.write(text.toUpperCase());
+document.write('<br>');
+// to change string toLowerCase
+document.write(text.toLowerCase());
+document.write('<br>');
+
+// substring
+// slice()
+// substring()
+// substr
+document.write(text.slice(0,15)+"...........");
+document.write('<br>');
+
+document.write(text.substring(5,25)+"........");
+document.write('<br>');
+
+document.write(text.substr(5,25)+"........");
+document.write('<br>');
+
+
+
+
+	</script>
+
+</body>
+</html>

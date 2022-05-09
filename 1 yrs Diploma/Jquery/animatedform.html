@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 600px;
+			margin: auto;
+			background-color: #ff16ff7a;
+			padding: 50px;
+			box-sizing: border-box;
+		}
+		form{
+			background-color: #b822cc63;
+			padding: 60px;
+			box-sizing: border-box;
+
+		}
+		input{
+			width: 400px;
+			height: 30px;
+			padding: 5px;
+			color: black;
+			font-size: 1pc;
+		}
+		input[type="submit"]{
+			width: 200px;
+			height: 35px;
+			background-color: silver;
+			margin-top: 5px;
+		}
+		button{
+			background-color: #8b309705;
+			border:none;
+			font-size: 20px;
+			cursor: pointer;
+			color: white;
+		}
+		#signup{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>Animated Form</title>
+</head>
+<body>
+	<div class="container">
+<section id="login">
+<form method="post" autocomplete="off">
+E-mail/Username:<br>
+<input type="text" name="user" placeholder="User information" required>
+<br>
+Password:<br>
+<input type="password" name="pass" placeholder="**********" required=""><br>
+<input type="submit" name="submit" value="Log In"><br>
+Don't Have a Account Yet <button onclick="signupform()">SignUp</button>	
+</form>	
+</section>
+<section id="signup">
+<form>
+FullName:<br>
+<input type="text" name="FullName" placeholder="FullName" required=""><br>
+UserName:<br>
+<input type="text" name="UserName" placeholder="UserName" required=""><br>
+E-mail:<br>
+<input type="email" name="E-mail" placeholder="E-mail Address" required=""><br>
+Password:<br>
+<input type="password" name="password" placeholder="***********" required=""><br>
+Confirm Password:<br>
+<input type="password" name="password" placeholder="***********" required=""><br>
+<input type="submit" name="submit" value="SignUp"><br>
+Already Have a Account? <button onclick="loginform()">Login</button>
+</form>
+</section>		
+
+	</div>
+
+	<script type="text/javascript">
+function signupform(){
+$('#login').fadeOut('fast', function(){
+$('#signup').slideDown(2000);
+});
+}
+function loginform(){
+$('#signup').fadeOut('fast', function(){
+$('#login').slideDown(2000);
+});
+}
+
+	</script>
+
+</body>
+</html>

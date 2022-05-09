@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+	<!-- collection of Homogeneous Object -->
+	<!-- contain more than one value -->
+	<script type="text/javascript">
+		
+var cars=['Nixon','BMW','Nisan','Ford','Maruti'];
+document.write(cars[0]);
+document.write('<br>');
+// to access full array
+document.write(cars);
+document.write('<br>');
+// to count the lenght of array use length
+document.write(cars.length);
+document.write('<br>');
+// use whileloop in array
+for(x=0;x<cars.length;x++){
+	document.write(cars[x]+"<br>");
+}
+document.write('<br>');
+
+// Unordered list
+document.write("<ul type='square'>");
+for(x=0;x<cars.length;x++){
+	document.write("<li>");
+	document.write(cars[x]+"<br>");
+}
+document.write("</li>");
+document.write("</ul>");
+document.write('<br>');
+
+// Ordered list
+document.write("<ol type='a'>");
+for(x=0;x<cars.length;x++){
+	document.write("<li>");
+	document.write(cars[x]+"<br>");
+}
+document.write("</li>");
+document.write("</ol>");
+document.write('<br>');
+
+// to sort array in ascending order use sort
+document.write(cars.sort());
+document.write('<br>');
+// to sort array in descending order use reverse
+document.write(cars.reverse());
+document.write('<br>');
+// to add last array element use push
+cars.push("Santosh");
+document.write(cars);
+// // it will show total length
+// document.write('<br>');
+// document.write(cars);
+// to remove the last array element use pop
+
+cars.pop();
+document.write('<br>');
+document.write(cars);
+document.write('<br>');
+
+// to remove first array element use shift
+cars.shift();
+document.write(cars);
+document.write('<br>');
+
+// to add first array element use unshift
+cars.unshift("Nexa");
+document.write(cars);
+document.write('<br>');
+
+// to add more array elements use splice
+cars.splice(2,0,"Toyota","Lambo");
+// 2-position where elements is added
+// 0- no any elements is removed
+document.write(cars);
+document.write('<br>');
+// to remove morethan one elements from a specific position
+cars.splice(3,2);
+// 3-position from which elements is removed
+// 2-number of elements removed
+document.write(cars);
+document.write('<br>');
+
+
+
+
+
+
+
+
+	</script>
+
+
+</body>
+</html>

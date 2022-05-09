@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Toggle Text inside Elements</title>
+<style type="text/css">
+    button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    div {
+            height: 400px;
+            width: 500px;
+            background-color: #c077d94a;
+            display: none;
+    }
+</style>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+    // $(document).ready(function(){
+        // $("button").click(function(){
+            // $('div').toggle(2000);
+            // $(this).text($(this).text() == 'Show' ? 'Hide' : 'Show');
+// 
+        // });
+    // });
+
+$(function(){
+    $('button').click(function(){
+        var btn=$('button');
+        if(btn.text()=="Show"){
+            $('div').slideDown(1000,function(){
+            btn.text('Hide');
+            });
+        }
+        else{
+            $('div').slideUp(1000,function(){
+            btn.text('Show');
+            });
+}    
+})
+})    
+</script>
+</head>
+<body>
+    <button type="button">Show</button>
+    <div></div>
+</body>
+</html>

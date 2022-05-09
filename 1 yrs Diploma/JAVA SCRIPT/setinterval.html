@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div{
+			height: 400px;
+			width: 400px;
+			margin: auto;
+			font-size: 50px;
+			text-align: center;
+			padding-top: 40px;
+			box-sizing: border-box;
+			border-radius: 50%;
+			border: 3px solid blue;
+			background-image: url(2.jpg);
+			background-size: cover;
+		}
+		p{
+			background-color: #0a4f7e99;
+			display: inline;
+			color: white;
+			box-sizing: border-box;
+			border: 2px solid #8b14da69;
+			border-radius: 10px;
+		}
+		h5{
+			font-size: 30px;
+			color: white;
+		}
+	</style>
+	<title></title>
+</head>
+<body onload="setInterval(demo,1000)">
+	<div>
+		<h5>This is digital clock</h5>
+	<p id="result"></p>
+	</div>
+	<script type="text/javascript">
+		function demo() {
+			var date=new Date();
+			document.getElementById('result').innerHTML=date.toLocaleTimeString();
+		}
+	</script>
+
+</body>
+</html>

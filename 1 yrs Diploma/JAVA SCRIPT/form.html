@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	First Number<br>
+	<input type="number" id="First"><br>
+	Second Number<br>
+	<input type="number" id="Second"><br>
+	Operator +,-,*,% and /<br>
+	<input type="text" id="operator"><br>
+	<input type="submit" onclick="demo()" value="check result">
+	<p id="result"></p>
+
+
+<script type="text/javascript">
+	
+function demo(){
+	var x=Number(document.getElementById('First').value);
+	var y=Number(document.getElementById('Second').value);
+	var z= document.getElementById('operator').value;
+
+	switch(z){
+
+case'+':
+var a=x+y;
+document.getElementById('result').innerHTML="The Addition is "+a;
+break;
+
+case'-':
+var b=x-y;
+document.getElementById('result').innerHTML="The Subtraction is "+b;
+break;
+
+
+case'*':
+var c=x*y;
+document.getElementById('result').innerHTML="The Multiplication is "+c;
+break;
+
+
+case'/':
+var d=x/y;
+document.getElementById('result').innerHTML="The Division is "+d;
+break;
+
+
+case'%':
+var e=x%y;
+document.getElementById('result').innerHTML="The Remainder is "+e;
+break;
+
+
+	}
+}
+
+</script>	
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="first" onfocus="foc()" onmouseover="over()" onmouseout="out()" onmousedown="down()" onmouseup="up()">
+	<p id="result"></p>
+	<script type="text/javascript">
+		function foc(){
+			var x=document.getElementById('first');
+			x.style.backgroundColor="#7ecbd263";
+
+			
+		}
+		function over(){
+			var x=document.getElementById('first');
+			x.style.backgroundColor="purple";
+			document.getElementById('result').innerHTML="This is mouse over";
+		}
+		function out(){
+			var x=document.getElementById('first');
+			x.style.backgroundColor="orange";
+			document.getElementById('result').innerHTML="This is mouse out";
+		}
+		function down(){
+			var x=document.getElementById('first');
+			x.style.backgroundColor="lightgreen";
+		document.getElementById('result').innerHTML="This is mouse Down";
+
+		}
+		function up(){
+			var x=document.getElementById('first');
+			x.style.backgroundColor="skyblue";
+			document.getElementById('result').innerHTML="This is mouse up";
+		}
+
+	</script>
+
+</body>
+</html>

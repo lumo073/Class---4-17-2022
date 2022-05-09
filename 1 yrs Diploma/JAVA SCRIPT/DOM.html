@@ -1,0 +1,25 @@
+<!-- DOM
+Document Object Model
+DOM Methods
+1)document.getElementById('id')
+2)document.getElementsByClassName('name')
+3)document.getElementsByTagName('tag') -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" onkeyup="demo()" id="first">
+	<p id="result"></p>
+	<script type="text/javascript">
+		function demo(){
+			var x=document.getElementById('first').value;
+			document.getElementById('result').innerHTML=x;
+
+		}
+
+	</script>
+
+</body>
+</html>

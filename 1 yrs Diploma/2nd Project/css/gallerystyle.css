@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: Courier New;
+}
+body{
+	background-color:#cc91cc4f;
+	margin: 0;
+	padding: 0;
+}
+.galleryheader{
+	height: 30vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../twenty.jpg);
+	background-size: cover;
+	background-position: center;
+}
+ul{
+	margin-top: 25px;
+	list-style-type: none;
+	float: right;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	padding: 5px 10px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: white;
+	color: black
+}
+ul li.active a{
+	background-color: white;
+	color: black
+}
+.logo img{
+	float: left;
+	height: auto;
+	width: 180px;
+
+}
+nav{
+	margin:auto;
+	max-width: 1200px;
+
+}
+.title{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	font-size: 50px;
+	color: white;
+}
+.title h2{
+	font-size: 25px;
+	color: white;
+}
+button{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.button{
+	position: absolute;
+	top: 69%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.btn{
+	font-size: 25px;
+	text-decoration: none;
+	border: 1px solid;
+	padding: 5px 10px;
+	color: white;
+	transition: 0.6s ease;
+}
+.btn:hover{
+	background-color: white;
+	color: black;
+}
+.gallery{
+	position: relative;
+	width: 100%;
+	
+}
+.gallery .section{
+	position: sticky;
+	top: 0;
+	height:100vh;
+	width: 100%;
+	background:url(../first.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(2){
+	background:url(../second.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(3){
+	background:url(../third.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(4){
+	background:url(../fourth.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(5){
+	background:url(../fifth.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(6){
+	background:url(../sixth.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(7){
+	background:url(../seventh.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(8){
+	background:url(../eight.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(9){
+	background:url(../nineth.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(10){
+	background:url(../tenth.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(11){
+	background:url(../eleven.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(12){
+	background:url(../twelve.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(13){
+	background:url(../thirteen.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(14){
+	background:url(../fourteen.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(15){
+	background:url(../fifteen.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(16){
+	background:url(../sixteen.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(17){
+	background:url(../seventeen.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(18){
+	background:url(../eighteen.jpg);
+	background-size: cover;
+}
+.gallery .section:nth-child(19){
+	background:url(../nineteen.jpg);
+	background-size: cover;
+}

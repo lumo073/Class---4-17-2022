@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div{
+			height: 500px;
+			width: 500px;
+			background-color: orange;
+			border: 5px solid green;
+		}
+	</style>
+	<title>Callback Function</title>
+</head>
+<body>
+	<button>Click</button>
+	<div></div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+$('button').click(function(){
+$('div').slideUp(3000,function(){
+alert('This is a end of SlideUp');
+})
+})
+})
+</script>
+
+
+
+</body>
+</html>

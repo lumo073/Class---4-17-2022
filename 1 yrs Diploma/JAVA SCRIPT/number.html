@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+var x=15;
+// to convert to string
+var y=x.toString();
+document.write(typeof(y));
+document.write('<br>');
+var a=14.44334;
+// convert to exponential
+var b=a.toExponential(2);
+document.write(b);
+document.write('<br>');
+// toFixed method is used to show how many digit to be shown after decimal point
+var c=a.toFixed(3);
+document.write(c);
+document.write('<br>');
+// toPrecision is used to show the number of digit
+var d=a.toPrecision(4);
+document.write(d);
+document.write('<br>');
+
+// convert string to number
+var e="15";
+var f=eval(e);
+document.write(typeof(f));
+document.write('<br>');
+
+// parseInt
+// parseFloat
+
+var g=parseInt("15.56");
+document.write(g);
+document.write('<br>');
+
+var h=parseFloat("16.345");
+document.write(h);
+document.write('<br>');
+
+var i=parseInt("12 years");
+document.write(i);
+document.write('<br>');
+
+var j=parseFloat("12 years");
+document.write(j);
+document.write("<br>");
+
+
+
+	</script>
+
+</body>
+</html>
