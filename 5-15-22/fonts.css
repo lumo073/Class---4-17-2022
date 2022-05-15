@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@700&display=swap');
 .first-para {
     font-family: 'Roboto', sans-serif;
 }
 
 .second-para {
     font-family: 'Montserrat', sans-serif;
+}
+
+.third-para {
+    font-family: 'Akshar', sans-serif;
 }
