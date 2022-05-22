@@ -1,0 +1,12 @@
+Javascript
+-> Programming Language of web
+->known as scripting language designed for user interface(client side)
+-> with the introduction of node js it can be used for (Server side)
+-> Javascript is used to change the behaviour of web page
+
+library/framework
+-> jquery
+-> react js
+-> node js (express, nest js)
+-> angular js
+-> vue js
