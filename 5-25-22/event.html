@@ -17,10 +17,16 @@
 
     <button onclick="demoFunction()">click to see the result</button>
     <h2 id="result"></h2>
+
+    <button ondblclick="demo2Function()">Double Click to See Result</button>
+    <h3 id="doubleclick"></h3>
     <script>
         function demoFunction(){
             // document.write(new Date())
             document.getElementById('result').innerHTML= new Date()
+        }
+        function demo2Function(){
+            document.getElementById('doubleclick').innerHTML= new Date()
         }
     </script>
 </body>
