@@ -16,10 +16,11 @@
     </pre>
 
     <button onclick="demoFunction()">click to see the result</button>
-
+    <h2 id="result"></h2>
     <script>
         function demoFunction(){
-            document.write(new Date())
+            // document.write(new Date())
+            document.getElementById('result').innerHTML= new Date()
         }
     </script>
 </body>
