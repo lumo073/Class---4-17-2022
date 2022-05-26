@@ -20,6 +20,10 @@
 
     <button ondblclick="demo2Function()">Double Click to See Result</button>
     <h3 id="doubleclick"></h3>
+
+    <button onload="demo3Function()">Double Click to See Result</button>
+    <h3 id="onload"></h3>
+
     <script>
         function demoFunction() {
             // document.write(new Date())
@@ -27,6 +31,9 @@
         }
         function demo2Function() {
             document.getElementById('doubleclick').innerHTML = new Date()
+        }
+        function demo3Function() {
+            document.getElementById('onloadclick').innerHTML = new Date()
         }
     </script>
 </body>
