@@ -14,9 +14,11 @@
 
 
     <script>
-        function showPass{
-            document.getElementById('show').innerHTML = 
+        const showPass = () => {
+            const inputValue = document.getElementById('pwd').value
+            document.querySelector('#show').innerHTML = inputValue
         }
+
     </script>
 </body>
 
