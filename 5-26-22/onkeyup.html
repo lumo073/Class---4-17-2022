@@ -12,9 +12,9 @@
     <input type="password" id="pwd" onkeyup="showPass()">
     <h3 id="show"></h3>
     <h2>Insert Two Number Below</h2>
-    <input type="number" id="firstnum">
+    First Number : <input type="number" id="firstnum">
 
-    <input type="number" id="secondnum">
+    Second Number : <input type="number" id="secondnum">
     <br>
     <br>
  
@@ -33,19 +33,29 @@
 
     <script>
 
-        const firstnum1 =getElementById('firstnum')
-        const secondnum1 =getElementById('secondnum')
-        function AddFunction() {
-            document.write(`${firstnum1+secondnum1} <br>`).
+        const AddFunction = () => {
+            const inputValue = Number(document.getElementById('firstnum').value)
+            const inputValue1 = Number(document.getElementById('secondnum').value)
+            const Addition = inputValue+inputValue1
+            document.querySelector('#addresult').innerHTML = Addition
         }
-        function SubFunction() {
-
+        const SubFunction = () => {
+            const inputValue = Number(document.getElementById('firstnum').value)
+            const inputValue1 = Number(document.getElementById('secondnum').value)
+            const Addition = inputValue-inputValue1
+            document.querySelector('#subresult').innerHTML = Addition
         }
-        function MultFunction() {
-
+        const MultFunction = () => {
+            const inputValue = Number(document.getElementById('firstnum').value)
+            const inputValue1 = Number(document.getElementById('secondnum').value)
+            const Addition = inputValue*inputValue1
+            document.querySelector('#multresult').innerHTML = Addition
         }
-        function DivFunction() {
-
+        const DivFunction = () => {
+            const inputValue = Number(document.getElementById('firstnum').value)
+            const inputValue1 = Number(document.getElementById('secondnum').value)
+            const Addition = inputValue/inputValue1
+            document.querySelector('#divtresult').innerHTML = Addition
         }
         const showPass = () => {
             const inputValue = document.getElementById('pwd').value
