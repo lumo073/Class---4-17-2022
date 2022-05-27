@@ -11,9 +11,42 @@
 <body>
     <input type="password" id="pwd" onkeyup="showPass()">
     <h3 id="show"></h3>
+    <h2>Insert Two Number Below</h2>
+    <input type="number" id="firstnum">
+
+    <input type="number" id="secondnum">
+    <br>
+    <br>
+ 
+    <button onclick="AddFunction()">click to Add Number</button>
+    <h2 id="addresult"></h2>
+
+    <button onclick="SubFunction()">click to Sub Number</button>
+    <h3 id="subresult"></h3>
+
+    <button onclick="MultFunction()">click to Mult Number</button>
+    <h3 id="multresult"></h3>
+
+    <button onclick="DivFunction()">click to Div Number</button>
+    <h3 id="divtresult"></h3>
 
 
     <script>
+
+        const firstnum1 =getElementById('firstnum')
+        const secondnum1 =getElementById('secondnum')
+        function AddFunction() {
+            document.write(`${firstnum1+secondnum1} <br>`).
+        }
+        function SubFunction() {
+
+        }
+        function MultFunction() {
+
+        }
+        function DivFunction() {
+
+        }
         const showPass = () => {
             const inputValue = document.getElementById('pwd').value
             document.querySelector('#show').innerHTML = inputValue
