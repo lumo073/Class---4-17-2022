@@ -12,6 +12,26 @@
         document.write(`${text} <br>`)
         // Count the number of character in a string use length
         document.write(`${text.length} <br>`)
+        // to find the position of specific string in a string use indexOf()
+        document.write(`${text.indexOf('to')} <br>`)
+        // search
+        document.write(`${text.search('to')} <br>`)
+        //lastIndexOf
+        document.write(`${text.lastIndexOf('to')} <br>`)
+        // replace string with another string use replace()
+        document.write(`${text.replace('programming','javascript')} <br>`)
+        //replaceall()
+        document.write(`${text.replaceAll('to','too')} <br>`)
+        //substring method
+        //slice (start,end) -> slice(4,15)
+        //substring(start,end) -> substring(4,15)
+        //substr(start,length) -> substr(4,15)
+
+        document.write(`${text.slice(4,15)} <br>`)
+        //toUpperCase()
+        //toLowerCase()
+        document.write(`${text.toUpperCase()} <br>`)
+        document.write(`${text.toLowerCase()} <br>`)
     </script>
 </body>
 </html>
