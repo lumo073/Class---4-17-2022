@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>map -> array interaction</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2></h2>
 
     <script>
-        const number=[15,5,10,25,30,50]
-        number.map(demoFunction)
-        function demoFunction(num){
-            document.write(`<li> ${num} </li>`)
-        }
+      const number = [15, 5, 10, 25, 30, 50];
+      number.map(demoFunction);
+      function demoFunction(num) {
+        document.write(`<li> ${num} </li>`);
+      }
+
+      document.write(`<hr>`);
+
+      const demoFunction1 = (num) => {
+        document.write(`<li> ${num} </li>`);
+      };
+      number.map(demoFunction1);
     </script>
-</body>
+  </body>
 </html>
