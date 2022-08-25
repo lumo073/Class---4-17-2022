@@ -1,0 +1,36 @@
+Database
+-> collection of Data
+
+DBMS ( Database management system)
+
+SQL( Structure Query Language)
+CRUD operation
+Create,Retrive,Update,Delete
+
+To creeate a Database
+    create database db_name
+
+To delete/drop a database
+    drop database db_name
+
+To create a table
+    create table tbl_name(
+        column_name1 datatype,
+        column_name2 datatype,
+        ............
+    );
+
+To drop the table
+    drop table tbl_name
+
+To delete all  data from table
+    truncate table tbl_name
+
+To show all data from table
+    select * from tbl_name
+
+To update data of the table
+    update tbl_name seet column_name='.....' where condition
+
+To delete specific data from table
+    delete from tbl_name where condition
