@@ -1,0 +1,47 @@
+{% extends 'client/layouts.html' %} 
+{% load static %}  
+    
+{% block title %}
+<title>Online Shop - All Products</title>
+{% endblock %} 
+
+
+{% block main_content %}
+
+<!-- product filter form start -->
+
+
+<div class="container">
+    <form>
+        {{product_filter.form}}
+        <button class="btn btn-success" type="submit">Search</button>
+    </form>
+</div>
+
+<!-- product filter form end -->
+
+<!-- product container start  -->
+
+<div class="container-fluid mt-3">
+    <h1 class="text-muted text-center p-3">
+        Available Products
+    </h1>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        {% for product in products %}
+        <div class="col" data-aos="fade-up-right">
+            <div class="card product-box">
+                <img src="/{{product.product_image}}" class="card-img-top" alt="{{product.product_name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.product_name}}</h5>
+                    <h5 class="text-muted">Rs.{{product.product_price}}</h5>
+                    <a href="/productdetails/{{product.id}}"><button class="btn btn-success px-4 rounded-pill">View Details</button></a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- product container end  -->
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'layouts.html' %}
+
+{% block title %}
+<title>Products</title>
+{% endblock %}
+
+{% block main_content %}
+{% for msg in messages %}
+
+{% if msg.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+<div class="alert alert-success">
+    {{msg}}
+</div>
+{% endif %}
+
+{% endfor %}
+<div class="container-fluid mt-4">
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Available Stock</th>
+                <th>Product Image</th>
+                <th>Product Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for post in products %}
+            <tr>
+                <td>{{post.product_name}}</td>
+                <td>{{post.product_price}}</td>
+                <td>{{post.stock}}</td>
+                <td><img src="/{{post.product_image}}" alt="" width="150"></td>
+                <td>{{post.Product_description}}</td>
+                <td>
+                    <a href="/admin/update_product/{{post.id}}" class="btn btn-primary text-white">
+                        <i class='bx bxs-edit'></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a href="/admin/delete_product/{{post.id}}" class="btn btn-danger text-white"
+                        onclick="return confirm('Are you sure want to Delete this Product')">
+                        <i class='bx bxs-trash'></i>
+                    </a>
+                </td>
+            </tr>
+
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

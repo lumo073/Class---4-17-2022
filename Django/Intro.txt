@@ -1,0 +1,39 @@
+Django
+-> web framework of python
+-> specially used to design backend code
+
+It is based on MVT design
+M-Model (data/database) -> SQL
+V-View (Function require to run the system)
+T-Template (UI -> User Interface)
+
+Django REST Framework (API)
+
+Lets Start
+To check python version
+->python --version
+
+To install pip
+-> py get-pip.py
+
+To check Pip version
+-> py -m pip --version
+
+To update pip
+-> py -m pip install --upgrade pip
+
+To install Django
+-> py -m pip install Django (windows)
+-> python3 -m pip install Django(MAC)
+
+To check Django version
+-> py -m django --version
+
+List of django admin command List
+-> django-admin
+
+Creating a project in django
+-> django-admin startproject project_name
+
+To start Server
+-> python manage.py runserver

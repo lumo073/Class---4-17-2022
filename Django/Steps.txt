@@ -1,0 +1,13 @@
+Migrations
+-> python manage.py makemigrations(prepare the migrations to be applied / defects changes)
+-> python manage.py migrate (actually migrate table to the database)
+
+To access admin site
+    at first create super user from this command
+-> python manage.py createsuperuser
+
+To create app
+-> python manage.py startapp name_app
+
+To connect to mysql
+-> pip install mysqlclient
