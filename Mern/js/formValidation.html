@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form onsubmit="return validate()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" onkeyup="name_validation()">
+    <span id="name_msg"></span>
+    <br>
+    <br>
+    <label for="age">Age:</label>
+    <input type="text" id="age" onkeyup="age_validation()">
+    <span id="age_msg"></span>
+    <br>
+    <br>
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" onkeyup="phone_validation()">
+    <span id="phone_msg"></span>
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" onkeyup="email_validation()">
+    <span id="email_msg"></span>
+    <br>
+    <br>
+    <label for="pwd">Password:</label>
+    <input type="text" id="pwd" onkeyup="password_validation()">
+    <span id="pwd_msg"></span>
+
+    <br>
+    <br>
+    <input type="submit">
+</form>
+
+<script src="./formValidation.js"></script>
+</body>
+</html>

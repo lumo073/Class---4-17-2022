@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+</head>
+<body>
+    <h1 id="myheading"></h1>
+    <p id="myparagraph"></p>
+    <li id="mylist"></li>
+<br>
+    <input type="text" id="inputtext" onkeyup="setheading()">
+    <br>
+    
+
+
+
+
+<script>
+// output
+/*
+1. document.write("") or document.writeln("")
+    clears the screen before writing on the document
+2. innerHTML
+        to print output into html elements
+3. console.log
+        to handle errors
+
+*/
+let str = "HELLO WORLD"
+document.write(str);
+document.writeln("<br>Hello world");
+document.write("<br>Hello world");
+
+document.getElementById("myheading").innerHTML = "HEADING"
+document.getElementById("myparagraph").innerHTML = "    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas mollitia in omnis error sed dolorem possimus accusamus vel recusandae adipisci inventore iure laborum, sit illo officia! Quidem natus nostrum accusantium."
+
+document.getElementById("mylist").innerHTML = "list item"
+
+console.log("HELLO THERE")
+
+// window.print()
+
+// let message = prompt("ENTER A MESSAGE")
+// window.alert(message)
+
+function setheading(){
+    let message = document.getElementById("inputtext").value 
+    document.getElementById("myheading").innerHTML = message
+}
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+//         let fruits = ["apple", "banana", "orange", "mango", "pear", "grapes"]
+
+//         // for (i = 0; i < fruits.length; i++) {
+//         //     document.write("<li>" + fruits[i] + "</li>")
+//         // }
+
+//         // foreach, map
+//         // foreach(function)
+
+//         /*function display(item){
+//             document.write(`<h4>${item}</h4>`)
+//         }*/
+
+//         const display = (item) => {
+//             document.write(`<h4>${item}</h4>`)
+//         }
+
+//         fruits.forEach((item,i)=>{
+//             document.write(`<p>${i+1}. ${item}</p>`)
+//         })
+// // `` - backtick, template literal - 
+// // ${variable name}
+
+//         new_fruits = fruits.map(item=>item.toUpperCase()) 
+//         document.write(new_fruits)
+
+
+//         new_fruits = fruits.forEach(item=>{
+//            return item.toUpperCase()
+//         }) 
+//         document.write("<br>"+new_fruits)
+
+//         // filter - array_name.filter(member=>condition)
+//         new_fruits = fruits.filter(item=>item.match('z'))
+//         document.write("<br>"+new_fruits)
+
+//         // find
+//         new_fruits = fruits.find(item=>item.match('z'))
+//         document.write("<br>"+new_fruits)
+
+//         // findIndex
+//         let index = fruits.findIndex(item=>item.match('z'))
+//         document.write("<br>"+index)
+
+// // sort, reverse
+//         document.write(`<br>${fruits.sort()}`)
+        
+//         document.write(`<br>${fruits.reverse()}`)
+
+// // some, every -> returns boolean (true or false)
+// result = fruits.some(item=>item.match('p'))
+// document.write("<br>"+result)
+
+// result = fruits.every(item=>item.match('p'))
+// document.write("<br>"+result)
+
+
+number = [147, 258, 369, 654, 987, 159, 173, 273]
+
+
+        number.forEach(num=>{
+            document.write(`<li>${num}</li>`)
+        })
+        // document.write("<ol type='a'>")
+        // number.map((num,x)=>{
+        //     document.write(`<li>${x})${num}</li>`)
+        // })
+        // document.write("</ol>")
+        number.map((num,x)=>{
+            document.write(`<br>${x}) ${num}`)
+        })
+
+        let new_number = number.map(num=>num*num)
+        document.write("<br>"+new_number)
+
+        new_number = number.filter(num=>num>200)
+        document.write("<br>"+new_number)
+        new_number = number.find(num=>num>200)
+        document.write("<br>"+new_number)
+        new_number = number.findIndex(num=>num>200)
+        document.write("<br>"+new_number)
+
+        document.write("<br>"+number)
+        document.write("<br>"+number.sort())
+        document.write("<br>"+number.reverse())
+
+        let result = number.some(num=>num>500)
+        document.write("<br>"+result)
+        result = number.every(num=>num>100)
+        document.write("<br>"+result)
+
+        let sum = number.reduce((a,c)=>{
+            document.write(`<br>a=${a}, c=${c}<br>`)
+            return a+c
+        })
+
+        document.write("<br>SUM = "+ sum)
+
+        
+        sum = number.reduceRight((a,c)=>{
+            document.write(`<br>a=${a}, c=${c}<br>`)
+            return a*c
+        })
+        document.write("<br>SUM = "+ sum)
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

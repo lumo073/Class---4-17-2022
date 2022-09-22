@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkMode</title>
+</head>
+<body>
+    <button onclick="change_mode()">Turn off light</button>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+
+    <script>
+        let light="on"
+        function change_mode(){
+            if(light == "on"){
+                document.querySelector("body").style.color = "white"
+                document.querySelector("body").style.backgroundColor = "black"
+                light = "off"
+                document.querySelector('button').innerHTML = "Turn on light"
+
+            }
+            else{
+                document.querySelector("body").style.color = "black"
+                document.querySelector("body").style.backgroundColor = "white"
+                light = "on"
+                document.querySelector('button').innerHTML = "Turn off light"
+            }
+        }
+
+    </script>
+</body>
+</html>

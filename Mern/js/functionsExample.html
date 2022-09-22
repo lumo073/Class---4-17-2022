@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="add()" onmouseover="displaydate()" onmouseout="changecolor()">Click me</button>
+    <button onclick="add2(5,6)">Click me</button>
+    <button onclick="call_add()">Click me</button>
+    <button onclick="call_add2()">Click me</button>
+    <button onclick="call_square()">Square of 5</button>
+
+    <input type="text" onkeyup="square()"  id="num">
+    <h2 id="result"></h2>
+
+    <!-- events
+    input - onchange, onkeyup, onkeydown
+    button - onclick, onmouseover, onmouseout, onmouseleave, onmouseenter
+    -->
+
+
+
+    <script src="./functions.js"></script>
+    <script>
+        function call_add() {
+            let c = add3()
+            document.write("Sum = " + c)
+        }
+        function call_add2() {
+            let c = add4(5, 6)
+            document.write("Sum = " + c)
+        }
+        const call_square = (x) => {
+            ans = square(5)
+            document.write(ans)
+        }
+    </script>
+</body>
+
+</html>

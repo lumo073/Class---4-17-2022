@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date functions</title>
+</head>
+<body>
+    <script>
+        month = ["Jan","Feb","Mar","Apr","May","June", "July","Aug","Sept","Oct","Nov","Dec"]
+        day = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"]
+
+        let today = new Date(2022,8,15,5,55,22)
+        document.write(today)
+        let yy = today.getFullYear()
+        document.write("<br>"+yy)
+        let mm = today.getMonth()
+        document.write("<br>"+month[mm])
+        let dd = today.getDate()
+        document.write("<br>"+dd)
+        let d = today.getDay()
+        document.write("<br>"+day[d])
+
+        let time = today.getTime()
+        document.write("<br>"+time)
+        let hh = today.getHours()
+        document.write("<br>"+hh)
+        let mins = today.getMinutes()
+        document.write("<br>"+mins)
+        let secs = today.getSeconds()
+        document.write("<br>"+secs)
+
+        
+
+
+    </script>
+</body>
+</html>

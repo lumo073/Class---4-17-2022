@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+
+    <script>
+        /*
+            loops - 
+                to perform same task repeatedly
+
+                initialize, condition check, 
+                statement to repeat, next
+
+            1. while loop
+                syntax:
+
+                initialize
+                while(Condition){
+                    statements to repeat if condition is true
+                    next(increment/decrement)
+                }
+
+            2. do while loop
+            syntax:
+                initialize
+                do{
+                    statement
+                    next
+                }while(condition)
+
+            3. for loop
+            syntax
+                for(initialize;condition; next){
+                    statements to repeat
+                }
+        */
+
+        // let a = 10
+        // while(a >= 1){
+        //     document.write("Hello<br>")
+        //     a--
+        // }
+
+        // let a = 100
+        // do{
+        //     document.write("HELLO WORLD<br>")
+        //     a--
+        // }while(a>10)
+
+        // for (i = 10; i >= 1; i--) {
+        //     document.write("Hello World<br>")
+        // }
+
+choice = "y"
+counter = 0
+while(choice == "y"){
+    counter ++
+    choice = prompt("Do u wish to increase count? enter y if yes")
+}
+document.write(counter)
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+
+    <script>
+        let str = "Welcome to javascript class."
+
+        document.write(str)
+        document.write("<br>" + typeof (str))
+        document.write("<br>Length = " + str.length)
+        document.write("<br>After trim length=" + str.trim().length)
+
+        // toUpperCase, toLowerCase
+        document.write("<br>" + str.toUpperCase())
+        document.write("<br>" + str.toLowerCase())
+
+        document.write("<br>" + str.charAt(2))
+        document.write("<br>" + str.charAt(str.length - 1))
+        document.write("<br>" + str.charCodeAt(2))
+
+
+        // slice, substr, substring
+
+        // slice(start index, end index) - end index not included
+        // negative - counts from end
+        // single parameter - counts upto the end
+        let new_str = str.slice(3,7)
+        document.write("<br>" + new_str)
+
+        // substr
+        // substr(start index, length)
+        // negative - counts from end
+        // single parameter - counts upto the end        
+        new_str = str.substr(-10)
+        document.write("<br>" + new_str)
+
+        // substring
+        new_str = str.substring(3)
+        // same as slice but doesnot take negative values
+        document.write("<br>" + new_str)
+
+        new_str = str + str
+        document.write("<br>" + new_str)
+
+        new_str = str.concat("Javascript is programming for web.")
+        document.write("<br>" + new_str)
+
+        let index = new_str.search("javascript")
+        document.write("<br>"+index)
+
+
+        new_str = str.concat("Javascript is programming for web.",str," Thank you.")
+        document.write("<br>" + new_str)
+
+        new_str = new_str.replace(/Javascript/ig,'html')
+        document.write("<br>" + new_str)
+        
+
+
+
+
+    </script>
+</body>
+
+</html>

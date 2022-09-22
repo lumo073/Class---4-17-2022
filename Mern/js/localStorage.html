@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+
+    <script>
+        // localStorage - get, set , clear, remove
+/* localStorage.setItem(key, value) - Add data to localstorage
+
+localStorage.getItem(key) - to get data from localStorage
+
+localStorage.removeItem(key) - removes data from localStorage
+*/
+// let key = "info"
+// let data = "information"
+
+let info = {
+    name: "kishor",
+    address: "ktm",
+    phone: "9860113289"
+}
+
+/*
+JSON - Javascript Object Notation
+JSON Object - {key1:value1, key2:value2}
+JSON.stringify(object) -> converts object into JSON string
+JSON.parse(string) -> converts JSON string to Object
+*/
+document.write("Name: " + info.name)
+
+
+localStorage.setItem("info",JSON.stringify(info))
+
+let personal_info = (localStorage.getItem("info"))
+document.write("<br>"+personal_info)
+
+personal_info = JSON.parse(personal_info)
+document.write("<br>Name: " + personal_info.name)
+document.write("<br>Address: " + personal_info.address)
+document.write("<br>Phone: " + personal_info.phone)
+
+// localStorage.setItem("name","Kishor")
+// localStorage.setItem(key,data)
+
+// let name = localStorage.getItem("name")
+// document.write(name)
+
+// localStorage.removeItem("info")
+// localStorage.clear()
+
+
+    </script>
+    
+</body>
+</html>

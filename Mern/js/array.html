@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+
+    <!-- arrays in javascript
+            let array_name = [1,2,3,"a",'b','c',[1,2,3],{key:Value}]
+            0 - length-1
+    -->
+    <script>
+        // let array_name = [1, 2, 3, "'a'", '"b"', 'c', [1, 2, 3], { key: "Value" }, false]
+
+        // document.write(array_name)
+        // document.write("<br>Length:"+array_name.length)
+
+        // document.write("<br>First: " + array_name[0])
+        // document.write("<br>Last: " + array_name[array_name.length-1])
+
+        let fruits = ["apple","orange","banana","mango","grapes"]
+
+        // unshift -> add member to the start of array
+        // push -> add member to the end of the array
+        
+        document.write("Original Array:"+fruits)
+
+        fruits.unshift("PEAR")
+        document.write("<br>Unshift Result:"+fruits)
+
+        fruits.push("PAPAYA")
+        document.write("<br>Push Result:" + fruits)
+
+        // shift -> removes from the start of array
+        // pop -> removes from the end of the array
+        fruits.shift()
+        document.write("<br>Shift Result:" + fruits)
+        fruits.pop()
+        document.write("<br>pop result:"+fruits)
+
+        // splice
+        // splice(index, no. of items to remove, items to add)
+        // index - position at which need to add/remove
+        fruits.splice(1, 0, "PEAR","PAPAYA")
+        document.write("<br>Splice Result:" + fruits)
+
+        fruits.sort()
+        document.write("<br>SORT: "+ fruits)
+
+        fruits.reverse()
+        document.write("<br>REVERSE: "+ fruits)
+
+        let new_fruits = fruits.slice(-4)
+        // slice(start, end) end not included
+        // if end is not provided, it will take up to the end
+        // negative values will slice from end
+        document.write("<br>OLD: "+ fruits)
+        document.write("<br>NEW: "+ new_fruits)
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
