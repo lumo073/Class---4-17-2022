@@ -1,0 +1,18 @@
+.carousel_image{
+    height: 100%;
+}
+
+.card-img-top{
+    height: 100%;
+    transition: 2s;
+    padding: 10px;
+}
+
+.img-div{
+    height: 350px;
+    overflow: hidden;
+}
+
+.card-img-top:hover{
+    transform: scale(1.5);
+}
